@@ -2,13 +2,13 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
       caches.open('cache-v1').then((cache) => {
           return cache.addAll([
-              '/',
-              '/index.html',
-              '/styles.css',
-              '/script.js',
-              '/manifest.json',
-              '/icon-192x192.png',
-              '/icon-512x512.png',
+              '/point-system-generated-by-ai/', // この行を修正
+              '/point-system-generated-by-ai/index.html', // この行を修正
+              '/point-system-generated-by-ai/styles.css', // この行を修正
+              '/point-system-generated-by-ai/script.js', // この行を修正
+              '/point-system-generated-by-ai/manifest.json', // この行を修正
+              '/point-system-generated-by-ai/icon-192x192.png', // この行を修正
+              '/point-system-generated-by-ai/icon-512x512.png', // この行を修正
           ]);
       })
   );
