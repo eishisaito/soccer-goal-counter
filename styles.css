@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 3rem; /* ここを変更 */
+  padding: 15px 30px; /* ここを変更 */
+  cursor: pointer;
+}
+
+span {
+  font-size: 4rem; /* ここを変更 */
+  margin: 0 30px; /* ここを変更 */
+}
