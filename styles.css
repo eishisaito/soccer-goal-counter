@@ -13,11 +13,8 @@ body {
   rgba(0, 104, 183, 0.5),
   rgba(29, 32, 136, 0.5),
   rgba(146, 7, 131, 0.5));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent; /* これが重要 */
-  display: inline; /* または display: inline-block; が必要な場合もある */
 }
+
 
 .container {
   text-align: center;
