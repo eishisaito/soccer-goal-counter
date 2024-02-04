@@ -11,20 +11,12 @@ if ('serviceWorker' in navigator) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const decrementBtn = document.getElementById('decrement');
   const incrementBtn = document.getElementById('increment');
   const counter = document.getElementById('counter');
 
   const storageKey = 'count';
   let count = localStorage.getItem(storageKey) || 0;
   counter.textContent = count;
-
-  decrementBtn.addEventListener('click', function() {
-    if (count > 0) {
-      count--;
-      updateCounter();
-    }
-  });
 
   incrementBtn.addEventListener('click', function() {
       count++;
