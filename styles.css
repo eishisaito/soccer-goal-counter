@@ -5,10 +5,19 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background: linear-gradient(to right,
+  rgba(230, 0, 0, 0.5),
+  rgba(243, 152, 0, 0.5),
+  rgba(255, 241, 0, 0.5),
+  rgba(0, 153, 68, 0.5),
+  rgba(0, 104, 183, 0.5),
+  rgba(29, 32, 136, 0.5),
+  rgba(146, 7, 131, 0.5));  
+  -webkit-background-clip: text;
 }
 
 .container {
-  display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -22,4 +31,24 @@ button {
 span {
   font-size: 4rem; /* ここを変更 */
   margin: 0 30px; /* ここを変更 */
+}
+
+h1 {
+  font-size: 5rem; /* ここを変更 */
+  margin-bottom: 30px; /* ここを変更 */
+}
+
+.gif-container {
+  width: 100%;
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* 画面に固定 */
+  top: 50%; /* 上から50%の位置 */
+  left: 50%; /* 左から50%の位置 */
+  transform: translate(-50%, -50%); /* 中央に配置 */
+  z-index: 1000; /* 他の要素より前面に */
+}
+
+.gif-container img {
+  max-width: 100%; /* コンテナの幅に合わせてサイズ調整 */
+  height: auto; /* アスペクト比を維持 */
 }

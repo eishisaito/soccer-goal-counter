@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポイントあつめ</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サッカーゴールかぞえ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json"> 
 </head>
 <body>
-    <div class="container">
-        <button id="decrement">-</button>
-        <span id="counter">0</span>
-        <button id="increment">+</button>
+  <div class="container">
+    <h1>サッカーゴールかぞえ</h1>
+    <div class="gif-container" id="gifContainer">
+      <img src="soccer.gif" alt="Soccer GIF">
     </div>
-    <script src="script.js"></script>
+    <span id="counter">0</span>
+    <br>
+    <button id="increment">ゴール</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -11,7 +11,6 @@ if ('serviceWorker' in navigator) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const decrementBtn = document.getElementById('decrement');
   const incrementBtn = document.getElementById('increment');
   const counter = document.getElementById('counter');
 
@@ -19,14 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
   let count = localStorage.getItem(storageKey) || 0;
   counter.textContent = count;
 
-  decrementBtn.addEventListener('click', function() {
-    if (count > 0) {
-      count--;
-      updateCounter();
-    }
-  });
-
   incrementBtn.addEventListener('click', function() {
+      var gifContainer = document.getElementById('gifContainer');
+      gifContainer.style.display = 'block'; // GIFコンテナを表示
+      setTimeout(function() {
+        gifContainer.style.display = 'none'; // 10秒後に非表示
+      }, 4500); // 10000ミリ秒 = 10秒
       count++;
       updateCounter();
   });
