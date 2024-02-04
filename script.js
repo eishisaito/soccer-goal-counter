@@ -19,6 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
   counter.textContent = count;
 
   incrementBtn.addEventListener('click', function() {
+      var gifContainer = document.getElementById('gifContainer');
+      gifContainer.style.display = 'block'; // GIFコンテナを表示
+      setTimeout(function() {
+        gifContainer.style.display = 'none'; // 10秒後に非表示
+      }, 4500); // 10000ミリ秒 = 10秒
       count++;
       updateCounter();
   });
